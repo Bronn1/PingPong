@@ -40,8 +40,8 @@ int Player1::getRacketHeight() const
 
 void Player1::slotUpdatePosition()
 {
-    if(GetAsyncKeyState('S')) { this->setY( this->y() + 3); } // движение игрока
-    if(GetAsyncKeyState('W')) { this->setY( this->y() - 3); }
+    if(GetAsyncKeyState('S')) { this->setY( this->y() + 2); } // движение игрока
+    if(GetAsyncKeyState('W')) { this->setY( this->y() - 2); }
 
     if(this->y() >= 420) { this->setY(420); } // ограничения не выхода за зону
     if(this->y() <= 20) { this->setY(20); }

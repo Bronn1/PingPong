@@ -35,7 +35,7 @@ private:
     int sceneWidth{360};
     int racketHeight;
     int racketWidth;
-    double ball_speed{1};
+    double ball_speed{1.5};
 };
 
 #endif // WIDGET_H

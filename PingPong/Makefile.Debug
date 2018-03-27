@@ -83,7 +83,7 @@ $(DESTDIR_TARGET): ui_widget.h $(OBJECTS)
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) $(OBJECTS)  $(LIBS)
 
 qmake: FORCE
-	@$(QMAKE) -o Makefile.Debug PingPong.pro -spec win32-g++ "CONFIG+=debug"
+	@$(QMAKE) -o Makefile.Debug PingPong.pro -spec win32-g++
 
 qmake_all: FORCE
 
